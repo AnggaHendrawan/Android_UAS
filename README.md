@@ -40,5 +40,5 @@ Pada contoh file diatas, dapat kita jelaskan beberapa kesimpulan seperti dibawah
 - Untuk code allprojects, secara basicnya berfungsi untuk menunjukan bahwa project top level atau project turunan yang di konfigurasi secara bawaan, akan melakukan proses pen-downloadan plugin atau library Java yang berada pada repository jcenter.</p>
 - Untuk code task clean, jika melihat fungsinya, kode ini hampir sama dengan tipe delete, hal ini mengindikasikan bahwa direktori build akan dihapus pada project root atau utama kalian. Karena secara default, hal ini berada pada build di top level.</p>
 </p>
-4. Settings.gradle (include ':app')
+4. Settings.gradle (include ':app')</p>
 Apa keuntungan yang bisa kita dapatkan dari fitur gradle? Salah satu keuntungan yang bisa kita dapatkan dari Gradle adalah kita bisa membuat sebuah multi-project. Dengan demikian, sudah bisa kita tebak, bahwa code include menunjukan suatu project yang berada di dalam suatu aplikasi,  pada bagian settings.gradle ini, kalian bisa menambahkan  suatu library project turunan , dan bisa kalian manfaatkan untuk mendukung project utama dari Aplikasi yang sedang kalian kerjakan.
