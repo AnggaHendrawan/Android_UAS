@@ -13,23 +13,23 @@ Ketika sedang mengerjakan project Aplikasi Android, tentunya kakan melihat suatu
 <p align= "center">
 <img src="https://github.com/AnggaHendrawan/Android_UAS/blob/master/g1.png" width="450" height="300" />             
 </p>  
-Perlu garis bawahi, bahwa banyak sekali masalah yang akan dihadapi oleh para developer ketika mereka tengah mengerjakan project androidnya, dan hal ini banyak disebabkan karena konfigruasi yang dilakukan pada file di Gradle banyak yang tidak berhasil.  
+Perlu garis bawahi, bahwa banyak sekali masalah yang akan dihadapi oleh para developer ketika mereka tengah mengerjakan project androidnya, dan hal ini banyak disebabkan karena konfigruasi yang dilakukan pada file di Gradle banyak yang tidak berhasil.  </p>
 
-Dalam artikel kali ini saya akan mencoba membahas, fungsi-fungsi dari setiap konfigurasi file , serta Gradle Script  yang terdapat pada android studuio. Mungkin didalam pembahasan ini, saya tidak terlalu menjelaskan secara terperinci, namun saya telah merangkum bagian-bagian inti dari permasalahan tersebut.
+Dalam artikel kali ini saya akan mencoba membahas, fungsi-fungsi dari setiap konfigurasi file , serta Gradle Script  yang terdapat pada android studuio. Mungkin didalam pembahasan ini, saya tidak terlalu menjelaskan secara terperinci, namun saya telah merangkum bagian-bagian inti dari permasalahan tersebut.</p>
 
-Fungsi - Fungsi Yang Terdapat Pada Gradle
+Fungsi - Fungsi Yang Terdapat Pada Gradle</p>
 
-1. Build.gradle (Module :app)
+1. Build.gradle (Module :app)</p>
 Seperti yang bisa kalian lihat pada file dibawah ini,  bahwasannya file tersebut merupakan konfigurasi file app level , yang disematkan pada code apply dengan tujuan untuk menambahkan plugin Android ke dalam build sistem. Pada block code dependencies terdapat tiga baris code. diantaranya adalah :
 <p align= "center">
 <img src="https://github.com/AnggaHendrawan/Android_UAS/blob/master/g2.PNG" width="450" height="300" />             
 </p>
-2. Proses Building
+2. Proses Building</p>
 Proses Building ini merupakan suatu proses yang diklaim memang melibatkan banyak tools, kemudian pada proses tersebut juga akan mengconvert sebuah project ke dalam Android Package (APK). Untuk memperjelas masalah tersebut, silahkan kalian perhatikan ilustrasi gambar dibawah ini 
 <p align= "center">
 <img src="https://github.com/AnggaHendrawan/Android_UAS/blob/master/g3.PNG" width="450" height="300" />             
 </p>
-3. Build.gradle (Project :Nama Project)
+3. Build.gradle (Project :Nama Project)</p>
 Dibawah ini adalah contoh dari file Build.gradle, silahkan kalian simak terlebih dahulu
 <p align= "center">
 <img src="https://github.com/AnggaHendrawan/Android_UAS/blob/master/g4.PNG" width="450" height="300" />             
