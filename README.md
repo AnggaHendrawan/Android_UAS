@@ -20,21 +20,21 @@ Dalam artikel kali ini saya akan mencoba membahas, fungsi-fungsi dari setiap kon
 Fungsi - Fungsi Yang Terdapat Pada Gradle</p>
 
 1. Build.gradle (Module :app)</p>
-Seperti yang bisa kalian lihat pada file dibawah ini,  bahwasannya file tersebut merupakan konfigurasi file app level , yang disematkan pada code apply dengan tujuan untuk menambahkan plugin Android ke dalam build sistem. Pada block code dependencies terdapat tiga baris code. diantaranya adalah :
+Seperti yang bisa kalian lihat pada file dibawah ini,  bahwasannya file tersebut merupakan konfigurasi file app level , yang disematkan pada code apply dengan tujuan untuk menambahkan plugin Android ke dalam build sistem. Pada block code dependencies terdapat tiga baris code. diantaranya adalah :</p>
 <p align= "center">
 <img src="https://github.com/AnggaHendrawan/Android_UAS/blob/master/g2.PNG" width="450" height="300" />             
 </p>
 2. Proses Building</p>
-Proses Building ini merupakan suatu proses yang diklaim memang melibatkan banyak tools, kemudian pada proses tersebut juga akan mengconvert sebuah project ke dalam Android Package (APK). Untuk memperjelas masalah tersebut, silahkan kalian perhatikan ilustrasi gambar dibawah ini 
+Proses Building ini merupakan suatu proses yang diklaim memang melibatkan banyak tools, kemudian pada proses tersebut juga akan mengconvert sebuah project ke dalam Android Package (APK). Untuk memperjelas masalah tersebut, silahkan kalian perhatikan ilustrasi gambar dibawah ini: </p>
 <p align= "center">
 <img src="https://github.com/AnggaHendrawan/Android_UAS/blob/master/g3.PNG" width="450" height="300" />             
 </p>
 3. Build.gradle (Project :Nama Project)</p>
-Dibawah ini adalah contoh dari file Build.gradle, silahkan kalian simak terlebih dahulu
+Dibawah ini adalah contoh dari file Build.gradle, silahkan kalian simak terlebih dahulu</p>
 <p align= "center">
 <img src="https://github.com/AnggaHendrawan/Android_UAS/blob/master/g4.PNG" width="450" height="300" />             
 </p>
-Pada conroh file diatas, dapat kita jelaskan beberapa kesimpulan seperti dibawah ini :
+Pada contoh file diatas, dapat kita jelaskan beberapa kesimpulan seperti dibawah ini :</p>
 - Seperti yang bisa kalian lihat , di atas merupakan contoh konfigurasi file top level,  yang mana kalian bisa membuat atau menambahkan pilihan konfigurasi secara umum untuk project turunanan / modules.  Code block buildscript , pada dasarnya difungsikan untuk mendownload sebuah plugin yang di perlukan oleh Gradle. Contoh kecilnya seperti pada kode diatas, dimana fungsi kode tersebut adalah sebagai jalur yang digunakan untuk  mengunduh repository jcenter.</p>
 - Secara umum Gradle tidak memasukan fungsi-fungsi Android. Namun untuk mengatasi masalah ini, Google telah menyediakan Android Plugin untuk Gradle ,yang telah terbukti bisa membantu kalian untuk mempermudah melakukan konfigurasi pada file project Android.</p>
 - Untuk code allprojects, secara basicnya berfungsi untuk menunjukan bahwa project top level atau project turunan yang di konfigurasi secara bawaan, akan melakukan proses pen-downloadan plugin atau library Java yang berada pada repository jcenter.</p>
